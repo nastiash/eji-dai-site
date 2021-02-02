@@ -139,5 +139,9 @@
 }
 
 .menu__nav-item:nth-child(2) {
+  color: #e01269;
+}
+
+.menu__nav-item:nth-child(2) {
   border-bottom: 2px solid #e01269;
 }

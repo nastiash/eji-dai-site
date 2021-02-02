@@ -4,6 +4,7 @@
   color: #2A2C2F;
   max-width: 1400px;
   min-width: 480px;
+  height: auto;
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
@@ -44,4 +45,10 @@ button {
   font-weight: 800;
   color: #e01269;
   font-size: 18px;
+}
+
+.bold-span-white {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
 }
