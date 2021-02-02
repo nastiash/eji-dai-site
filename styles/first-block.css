@@ -1,10 +1,12 @@
 .first-block {
   max-width: 80%;
+  padding-top: 20px;
   min-height: 400px;
   margin: 0 auto;
   display:grid;
   grid-template-columns: 55% 45%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 40% 40%;
+  grid-row-gap: 10px;
   grid-template-areas:
     'one two'
     'one three'
@@ -22,8 +24,12 @@
   grid-area: two;
   font-size: 33px;
   font-weight: 500;
-  margin: auto;
+  margin: 0;
   text-align: center;
+}
+
+.title__image {
+  max-height: 90%;
 }
 
 .first-block__special {

@@ -7,7 +7,7 @@
   grid-template-areas:
   'about-title about-title'
   'about-button about-text' ;
-  margin: 50px auto;
+  margin: 0 auto 50px;
 }
 
 .title {
@@ -26,7 +26,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #e01269;
+  background-color: #e8e8e8;
   height: 6px;
   width: 100%;
   margin-top: -2px;

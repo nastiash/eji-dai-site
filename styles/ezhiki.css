@@ -7,3 +7,9 @@
   max-width: 100%;
   min-width: 480px;
 }
+
+.main__header {
+  font-size: 44px;
+    font-weight: 800;
+    text-align: center;
+}

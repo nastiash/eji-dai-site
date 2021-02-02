@@ -1,5 +1,5 @@
 .banner {
-  background-color: #e8e6e6;
+  background-color: #e01269;
   min-height: 100px;
   max-height: 100px;
   display: flex;
@@ -29,4 +29,5 @@
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
+  color: #fff;
 }

@@ -1,6 +1,7 @@
 .footer {
   background-color: #fff;
   margin-top: 20px;
+  margin-left: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
   min-height: 350px;
@@ -11,20 +12,27 @@
 
 .footer__author {
   margin: 18px 0;
+  padding-top: 20px;
   color: #1f1f1f;
   line-height: 20px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
+  text-transform: uppercase;
   border-top: 1px solid #e8e8e8;
 }
 
 .footer__column_content_copyright {
-  flex-basis: 65%;
+  flex-basis: 30%;
   flex-direction: column;
   justify-content: space-between;
   }
 
 .footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_contacts {
   display: flex;
   flex-direction: column;
 }
@@ -52,12 +60,12 @@
 .footer__column-links {
   text-decoration: none;
   color: #1f1f1f;
-  line-height: 24px;
+  line-height: 30px;
   font-size: 16px;
-  font-weight: normal;
-  -webkit-transition: opacity .5s linear;
-  -o-transition: opacity .5s linear;
+  font-weight: 300;
+  text-transform: uppercase;
   transition: opacity .5s linear;
+  justify-content: center;
 }
 
 .footer__column-links:last-of-type {
@@ -76,7 +84,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   position:relative;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer__links-list {
