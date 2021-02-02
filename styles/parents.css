@@ -1,0 +1,37 @@
+.parents {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  'about-title about-title'
+  'parents-button parents-text' ;
+  margin: 50px auto;
+}
+
+
+.parents__text {
+  grid-area: parents-text;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  padding-bottom: 40px;
+  max-width: 80%;
+  margin-right: 10%;
+}
+
+.parents__button {
+  grid-area: parents-button;
+  height: 100%;
+  align-self: center;
+  background-image: url(../images/parents-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 20%;
+}

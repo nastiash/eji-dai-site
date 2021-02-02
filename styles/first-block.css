@@ -1,0 +1,72 @@
+.first-block {
+  max-width: 80%;
+  min-height: 400px;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'one two'
+    'one three'
+}
+
+.first-block__photo {
+  grid-area: one;
+  background-image: url(../images/eji-dai-3.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.first-block__title {
+  grid-area: two;
+  font-size: 33px;
+  font-weight: 500;
+  margin: auto;
+  text-align: center;
+}
+
+.first-block__special {
+  grid-area: three;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.special__title {
+  background-color: #e01269;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  grid-template-areas:
+  'icon'
+  'text'
+}
+
+.title-icon {
+  grid-area: icon;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  padding-top: 15px;
+}
+
+.title-text {
+  grid-area: text;
+  margin:auto;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.special__photo {
+  background-image: url(../images/shapochka.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}

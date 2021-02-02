@@ -1,0 +1,67 @@
+.about {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-template-rows: auto;
+  grid-template-areas:
+  'about-title about-title'
+  'about-button about-text' ;
+  margin: 50px auto;
+}
+
+.title {
+  width: 100%;
+  grid-area: about-title;
+  margin: 0 auto 40px;
+  position: relative;
+  z-index: -1;
+}
+
+.about__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e01269;
+  height: 6px;
+  width: 100%;
+  margin-top: -2px;
+  z-index: -10;
+}
+
+.about__title {
+  width: fit-content;
+  text-transform: uppercase;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.about__text {
+  grid-area: about-text;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  padding-bottom: 40px;
+  max-width: 80%;
+  margin-right: 10%;
+}
+
+.about__button {
+  grid-area: about-button;
+  height: 100%;
+  align-self: center;
+  background-image: url(../images/pitomnik-ezhei.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 20%;
+}
