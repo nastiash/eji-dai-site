@@ -37,7 +37,6 @@
 .phone__link {
   text-decoration: none;
   color: #2A2C2F;
-  z-index: 100;
 }
 
 @media only screen and (max-width: 670px) {
@@ -77,7 +76,7 @@
   position: sticky;
   top: 0;
   background-color: #fff;
-  z-index: 100000;
+  z-index: 10;
 }
 
 .navbar-top {
@@ -128,6 +127,7 @@
   height: 60px;
   display: flex;
   align-items: center;
+  z-index: 100000000000000;
 }
 
 .navbar-bottom .nav-links li {
@@ -135,7 +135,7 @@
   text-transform: uppercase;
   display: inline-block;
   height: 100%;
-  color: #fff;
+  color: rgba(252,70,107,1);
   position: relative;
 }
 
@@ -242,6 +242,7 @@
     display: inline-block;
     top: 5px;
     right: 1rem;
+    z-index: 10000000000000000000000000000;
   }
   .searchbar {
     width: 100%;
@@ -256,6 +257,7 @@
   }
   .navbar-bottom .nav-links li a {
     height: 60px;
+    color: #d53369;
   }
   .navbar-bottom .nav-links li a:hover, .navbar-bottom .nav-links li a.active {
     background: #d53369;
