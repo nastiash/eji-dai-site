@@ -1,15 +1,13 @@
 .ezhiki {
-  max-width: 100%;
-  min-width: 480px;
+  max-width: 99%;
+  min-width: 500px;
+  margin: 1% auto;
+  height: auto;
 }
 
 .ezhiki__image {
   max-width: 100%;
-  min-width: 480px;
-}
-
-.main__header {
-  font-size: 44px;
-    font-weight: 800;
-    text-align: center;
+  min-width: 500px;
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  height: auto;
 }

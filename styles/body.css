@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .body {
-  font-family: 'Montserrat', 'sans-serif';
+  min-height: 100%;
+  max-width: 100%;
+  min-width: 500px;
   background-color: #fff;
   color: #2A2C2F;
-  max-width: 1400px;
-  min-width: 480px;
+
   height: auto;
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 ul {
@@ -18,7 +28,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #2A2C2F;
+  color: #fff;
 }
 
 li {
@@ -31,10 +41,6 @@ h1, h2, h3, h4, p {
   padding: 0;
 }
 
-button {
-  background-color: #fff;
-  border: none;
-}
 
 .bold-span {
   font-size: 44px;

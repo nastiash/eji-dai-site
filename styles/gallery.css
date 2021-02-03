@@ -6,7 +6,8 @@
 	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
   color: #555;
-  padding-top: 150px;
+  z-index: 0;
+  margin: 0 auto;
 }
 
 .clear-fix {
