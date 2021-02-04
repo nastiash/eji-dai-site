@@ -1,14 +1,16 @@
 .title__container {
   width: 100%;
-  min-height: 70%;
+  min-height: 70px;
   background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);
+  display: flex;
+  position: relative;
 }
 
 .container {
   width: 80%;
   display:flex;
   justify-content:space-between;
-  margin: 0 auto;
+  margin: auto;
   border-radius: 10px;
 }
 
@@ -46,26 +48,13 @@
   font-weight: 500;
 }
 
-
-.btn-grad {background-image: linear-gradient(to right, #f8f8f8 0%, #FFFFFF  51%, #f8f8f8  100%)}
-.btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   display: block;
- }
-
  .main__button:hover {
    background-position: right center; /* change the direction of the change here */
    color:#DD2476;
    text-decoration: none;
  }
+
+
 
 
 /* Large desktops and laptops */
@@ -90,11 +79,19 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 780px) {
+  .title__container {
+    width: 100%;
+    min-height: 100px;
+  }
+
   .main__button {
     width: 150px;
+    padding: 10px 5px;
   }
 
   .main-title {
     font-size: 16px;
 }
+
+
 }

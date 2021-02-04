@@ -179,10 +179,9 @@
   z-index: 101;
 }
 
-.search-toggle {
-  right: 0;
-  top: 50%;
-  margin-top: -20px;
+.nav__toggle {
+  width: 40px;
+  height: 40px;
 }
 
 .menu-toggle {
@@ -195,12 +194,6 @@
 
 .cancel-btn {
   display: none;
-}
-
-.toggler svg {
-  width: 40px;
-  height: 40px;
-  fill: #ccc;
 }
 
 @media only screen and (max-width: 786px) {
@@ -290,8 +283,8 @@
     padding-left: 420px;
   }
 
-  .search-toggle, .menu-toggle {
-    margin-top: 10px;
+  .menu-toggle {
+    margin-top: 5px;
   }
 }
 

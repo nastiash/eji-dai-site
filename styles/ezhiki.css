@@ -8,8 +8,28 @@
 }
 
 .ezhiki__image {
+  display: block;
   max-width: 100%;
   min-width: 500px;
   background-color: white;
   height: auto;
+}
+
+.ezhiki__image-mobile {
+  display: none;
+  max-width: 100%;
+  min-width: 500px;
+  background-color: white;
+  height: auto;
+}
+
+@media (max-width: 780px) {
+  .ezhiki__image-mobile {
+    display:block;
+  }
+
+  .ezhiki__image {
+    display: none;
+  }
+
 }
