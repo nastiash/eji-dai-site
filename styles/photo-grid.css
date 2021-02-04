@@ -1,7 +1,7 @@
 /* Основные стили для разрешения до 1280px и выше*/
 .photo-grid {
-  max-width: 1400px;
-  min-width: 480px;
+  max-width: 80%;
+  min-width: 500px;
   padding: 0;
   margin: 40px auto;
   display: grid;
@@ -42,4 +42,5 @@
 .photo-grid__item {
   width: 100%;
   object-fit: scale-down;
+  border-radius: 10px;
 }

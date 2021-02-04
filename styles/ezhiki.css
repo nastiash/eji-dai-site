@@ -1,13 +1,15 @@
 .ezhiki {
-  max-width: 99%;
+  max-width: 100%;
   min-width: 500px;
-  margin: 1% auto;
+  padding: 0;
+  margin: 0;
   height: auto;
+  background-color: white;
 }
 
 .ezhiki__image {
   max-width: 100%;
   min-width: 500px;
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  background-color: white;
   height: auto;
 }
