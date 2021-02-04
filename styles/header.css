@@ -1,23 +1,100 @@
-.main-title__container {
+.title__container {
   width: 100%;
+  min-height: 70%;
+  background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);
+}
+
+.container {
+  width: 80%;
+  display:flex;
+  justify-content:space-between;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.main-title__container {
+  width: 50%;
   position: relative;
   display:flex;
-  padding: 20px 0 0;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+
   }
 
-.second-title__container {
-  width: 100%;
-  position: relative;
-  display:flex;
-  padding: 20px 0 0;
-}
-
 .main-title {
-  margin: 0 auto;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  padding: 20px 0;
 }
 
-.second-title {
-  margin: 0 auto;
+.main__button {
+  margin: auto 0;
+  height: 50%;
+  padding: 15px 15px;
+  text-align: center;
   text-transform: uppercase;
-  padding: 0 0 20px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #f8f8f8 0%, #FFFFFF  51%, #f8f8f8  100%);
+  color:#DD2476;
+  border-radius: 10px;
+  display: block;
+  width: 350px;
+  font-weight: 500;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #f8f8f8 0%, #FFFFFF  51%, #f8f8f8  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .main__button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color:#DD2476;
+   text-decoration: none;
+ }
+
+
+/* Large desktops and laptops */
+@media (max-width: 1300px) {
+  .main-title {
+    font-size: 20px;
+}
+}
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 1024px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 780px) {
+  .main__button {
+    width: 150px;
+  }
+
+  .main-title {
+    font-size: 16px;
+}
 }
