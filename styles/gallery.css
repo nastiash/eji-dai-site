@@ -1,8 +1,7 @@
 .gallery {
 	position: relative;
-  max-width: 1400px;
-  min-width: 480px;
-  min-height: 100vw;
+  width: 100%;
+  min-width: 500px;
 	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
   color: #555;
