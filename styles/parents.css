@@ -1,37 +1,85 @@
 .parents {
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 40px;
-  grid-template-rows: auto;
-  grid-template-areas:
-  'about-title about-title'
-  'parents-button parents-text' ;
-  margin: 50px auto;
+  width: 100%;
 }
 
-
-.parents__text {
-  grid-area: parents-text;
+.parents__buttons-container {
+  width: 80%;
+  margin: 0 auto 40px;
+  position: relative;
   display: grid;
-  grid-template-rows: repeat(3, auto);
-  grid-row-gap: 10px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  padding-bottom: 40px;
-  max-width: 80%;
-  margin-right: 10%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  grid-gap: 20px;
 }
 
 .parents__button {
-  grid-area: parents-button;
-  height: 100%;
-  align-self: center;
-  background-image: url(../images/parents-3.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-left: 20%;
+   background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);
+   margin: 0 0 30px;
+   padding: 15px 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 20px #eee;
+   border: none;
+   border-radius: 10px;
+   display: block;
+   width: 100%;
+   height: 100px;
+   font-size: 24px;
+}
+
+.parents__button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+ }
+
+.parents__container {
+  width: 80%;
+  margin: 0 auto 40px;
+  position: relative;
+	padding: 40px;
+  border-top: 6px solid #DD2476;
+  border-radius: 4px;
+  border-image-slice: 1;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+	background-color: #f8f8f8;
+}
+
+.parents__container_boy {
+  border-top: 6px solid #FF512F;
+}
+
+.parents__container_girl {
+  border-top: 6px solid #DD2476;
+}
+
+.parents__container_hidden {
+ display: none;
+}
+
+.parents__name {
+  font-size: 35px;
+  line-height: 1.25;
+}
+
+.parents__subtitle {
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.parents__photo-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.parents__photo {
+    max-width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    border-radius: 4px;
+    object-fit: cover;
 }

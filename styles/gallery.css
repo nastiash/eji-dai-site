@@ -14,22 +14,22 @@
 }
 
 .masonry-container {
-	width: 80vw;
+	width: 90vw;
 	position: relative;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .panel {
 	position: relative;
 	display: inline-block;
-	width: calc((80vw - 60px)/3);
-	height: calc((80vw - 60px)/3);
+	width: calc((90vw - 60px)/3);
+	height: calc((90vw - 60px)/3);
 	margin-left: 20px;
 	margin-bottom: 20px;
 	cursor: pointer;
-	box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
 	transition: all 0.2s ease-out;
+	border-radius: 10px;
 }
 
 .panel:hover {
@@ -43,15 +43,15 @@
 
 .panel:nth-child(11n+4) {
 	margin-left: 0;
-	width: calc(((80vw - 20px)/3)*2);
-	height: calc((80vw - 60px)/3);
+	width: calc(((90vw - 20px)/3)*2);
+	height: calc((90vw - 60px)/3);
 }
 
 .panel:nth-child(11n+6) {
 	margin-left: 0;
 	float: left;
-	width: calc((80vw - 60px)/3);
-	height: calc(((80vw - 20px)/3)*2 - 8px);
+	width: calc((90vw - 60px)/3);
+	height: calc(((90vw - 20px)/3)*2 - 8px);
 }
 
 .panel:nth-child(11n+6) > .panel-wrapper > .panel-img {
@@ -60,7 +60,7 @@
 
 .panel:nth-child(11n+7) {
 	margin-left: 27px;
-	width: calc(((80vw - 20px)/3)*2);
+	width: calc(((90vw - 20px)/3)*2);
 }
 
 .panel:nth-child(11n+8) {
@@ -73,11 +73,11 @@
 
 .panel:nth-child(11n+10) {
 	margin-left: 0;
-	width: calc((80vw - 30px)/2);
+	width: calc((90vw - 30px)/2);
 }
 
 .panel:nth-child(11n+11) {
-	width: calc((80vw - 30px)/2);
+	width: calc((90vw - 30px)/2);
 }
 
 
@@ -87,6 +87,7 @@
 	width: 100%;
 	height: 100%;
 	overflow: hidden !important;
+	border-radius: 10px;
 }
 
 .panel-overlay {
