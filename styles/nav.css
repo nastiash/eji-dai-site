@@ -47,11 +47,13 @@
 .phone__link {
   text-decoration: none;
   color: #2A2C2F;
+  font-size: 18px;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 900px) {
   .phone__link {
     display: none;
+    font-size: 14px;
   }
 }
 
@@ -59,7 +61,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 900px) {
   .phone__link-mobile {
     display: block;
     color: #2A2C2F;
@@ -75,8 +77,8 @@
 }
 
 .icon {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   margin-left: 10px;
 }
 
@@ -91,7 +93,7 @@
 }
 
 .navbar-top {
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,7 +108,7 @@
   height: 60px;
   z-index: 99;
   position: sticky;
-  top: 50px;
+  top: 70px;
 }
 
 .navbar-bottom .nav-links {
