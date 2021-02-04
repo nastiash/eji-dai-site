@@ -28,6 +28,11 @@
   }
 }
 
+.nav__close {
+  height: 40px;
+  width: 40px;
+}
+
 .phone__container {
   display: flex;
   align-items: center;
