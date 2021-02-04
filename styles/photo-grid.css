@@ -10,37 +10,39 @@
   grid-template-rows: repeat(2, 1fr);
 }
 
-/* Cтили для для разрешения до 1064px */
-@media screen and (max-width: 1064px) {
-  .photo-grid {
-    max-width: 928px;
-    gap: 14px;
-    grid-template-columns: repeat(3, fit-content(300px));
-  }
-}
-
-/* Cтили для для разрешения до 960px */
-@media screen and (max-width: 960px) {
-  .photo-grid {
-    max-width: 720px;
-    padding: 0 0 88px;
-    gap: 16px;
-    grid-template-columns: repeat(2, fit-content(352px));
-  }
-}
-
-/* Cтили для для разрешения до 320px */
-@media screen and (max-width: 320px) {
-  .photo-grid {
-    max-width: 288px;
-    padding: 0 0 64px;
-    gap: 12px;
-    grid-template-columns: repeat(1, fit-content(288px));
-  }
-}
-
 .photo-grid__item {
   width: 100%;
   object-fit: scale-down;
   border-radius: 10px;
+}
+
+
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 1024px) {
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 900px) {
+  .photo-grid {
+    max-width: 100%;
+    min-width: 500px;
+    padding: 0 40px;
+    margin: 40px auto;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 780px) {
+
 }
