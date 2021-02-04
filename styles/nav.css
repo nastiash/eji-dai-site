@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  padding: 0 10px  0 0;
+  padding: 0;
 
 }
 
@@ -79,7 +79,11 @@
 .icon {
   height: 50px;
   width: 50px;
-  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icon__no-margin {
+  margin-right: 0;
 }
 
 .main-header {
@@ -161,6 +165,7 @@
   border: none;
   z-index: 101;
 }
+
 
 .nav__toggle {
   width: 40px;
