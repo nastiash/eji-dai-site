@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .body {
+  width: 100%;
   min-height: 100vh;
-  max-width: 1280px;
+  max-width: 1024px;
   min-width: 500px;
   background-color: #fff;
   color: #2A2C2F;
@@ -10,6 +11,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
+  position: relative;
 }
 
 * {
@@ -40,6 +42,12 @@ h1, h2, h3, h4, p {
   padding: 0;
 }
 
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 
 .bold-span {
   font-weight: 800;
@@ -55,4 +63,42 @@ h1, h2, h3, h4, p {
   font-size: 26px;
   font-weight: 800;
   color: #fff;
+}
+
+.button {
+  background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);
+   margin: 20px 0 0;
+   padding: 15px 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   width: 250px;
+ }
+
+ .button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .title {
+  display:flex;
+  margin: 40px auto;
+  font-size: 34px;
+  width:auto;
+  align-self: flex-start;
+  position: relative;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .title {
+  width: 100%;
+  font-size: 24px;
+  }
 }
