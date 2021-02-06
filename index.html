@@ -13,8 +13,8 @@
       <a class="whatsapp__link" href="https://wa.me/89036103000" target="_blank"><img class="whatsapp__icon" src="./images/whatsapp.png"></img></a>
     </div>
   </div>
-
-  <header class="main-header">
+<header class="header__container">
+  <div class="main-header">
     <nav class="navbar-top navbar">
       <div class="phone__container">
         <ul class="phone-icon__container">
@@ -29,9 +29,9 @@
       </ul>
     </div>
     </nav>
-  </header>
+  </div>
 
-  <header class="bottom-header">
+  <div class="bottom-header">
     <nav class="navbar-bottom navbar">
       <button class="menu-toggle toggler">
         <img class="nav__toggle" src="./images/menu-button.svg">
@@ -49,7 +49,9 @@
         <li><a class = "nav__link" href="./pages/contacts.html">Контакты</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
+
 
 <main class="main">
   <section class="ezhiki">
@@ -68,15 +70,13 @@
     <div class="main-title__image"></div>
 </div>
   <div class="title">
-    <h2 class="about__title bold-span">Несколько слов о нас
+    <h2 class="about__title bold-span">Несколько слов о питомнике
       <div class="title__underline"></div>
     </h2>
   </div>
+
   <section class="about">
     <div class="card">
-      <div class="card__image-container">
-        <img class="card__image" src="./images/hedgehog-grid.jpg"/>
-      </div>
       <div class="card__text-container">
         <h2 class="card__title">Питомник ЕЖИ DAI</h2>
         <p class="card__paragraph">
@@ -85,66 +85,84 @@
           всем необходимым для своего содержания: домиком, беговым колесом и ежедневно
           получает живой корм.
         </p>
-        <p class="card__paragraph">У нас Вы можете выбрать и купить африканского ежика круглосуточно.
-          Африканский карликовый еж - это всегда положительные эмоции!</p>
-        <a class="card__button" target="_blank" href="./pages/photo.html">
-          Фотогалерея &rarr;
-        </a>
+        <p class="card__paragraph">У нас Вы можете выбрать и купить африканского ежика круглосуточно.</p>
+          <p class="card__paragraph"><b>Африканский карликовый еж - это всегда положительные эмоции!</b></p>
+          <p class="card__paragraph">Начиная заниматься африканскими ежиками,
+            было принято решение - в качестве производителей
+            Питомник ЕЖИ-DAI выбирает только ЛУЧШИХ ежей! И такими стали ежи, приобретенные в проверенных питомниках
+            Германии, Чехии и США.</p>
+          <p class="card__paragraph">Сейчас к нам завезены ёжики самых редких окрасов -
+            Algerian Black, Brown и Silver.</p>
+          <a class="card__button" target="_blank" href="./pages/parents.html">
+            Ежики питомника &rarr;
+          </a>
       </div>
     </div>
+    </section>
 
-    <div class="card card_position_right">
-      <div class="card__image-container card__image-container_position_right">
-        <img class="card__image card__image_position_right" src="./images/gallery/eji-dai-ezhiki-17.jpg"/>
-      </div>
-      <div class="card__text-container card__text-container_position_right">
-        <h2 class="card__title">Самцы и самки питомника</h2>
-        <p class="card__paragraph">Начиная заниматься африканскими ежиками,
-          было принято решение - в качестве производителей
-          Питомник ЕЖИ-DAI выбирает только ЛУЧШИХ ежей! И такими стали ежи, приобретенные в проверенных питомниках
-          Германии, Чехии и США.</p>
-        <p class="card__paragraph">Сейчас к нам завезены ёжики самых редких окрасов -
-          Algerian Black, Brown и Silver.</p>
-        <a class="card__button" target="_blank" href="./pages/parents.html">
-          Ежики питомника &rarr;
-        </a>
-      </div>
-    </div>
 
-    <div class="card">
-      <div class="card__image-container">
-        <img class="card__image" src="./images/gallery/eji-dai-ezhiki-3.jpg"/>
+    <section class="photos-list_slider">
+        <input type="radio" name="point" id="slide1" checked>
+        <input type="radio" name="point" id="slide2">
+        <input type="radio" name="point" id="slide3">
+        <div class="slider">
+          <img class="slides slide1" src="./images/hedgehog-grid.jpg">
+          <img class="slides slide2" src="./images/gallery/eji-dai-ezhiki-17.jpg">
+          <img class="slides slide3" src="./images/gallery/eji-dai-ezhiki-3.jpg">
+        </div>
+        <div class="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+    </section>
+
+
+
+<section class="photos-list">
+<div class="card card_content_image">
+  <div class="card__image-container">
+    <img class="card__image" src="./images/hedgehog-grid.jpg"/>
+  </div>
+</div>
+
+<div class="card card_content_image">
+     <div class="card__image-container">
+        <img class="card__image" src="./images/gallery/eji-dai-ezhiki-17.jpg"/>
       </div>
-      <div class="card__text-container">
-        <h2 class="card__title">Все, что нужно ежатам</h2>
-        <p class="card__paragraph">Питомник африканских ежей ЕЖИ-DAI - это не обычный питомник,
-          здесь Вы найдете много интересного.</p>
-        <p class="card__paragraph">Приехав в питомник ЕЖИ-DAI и приобретая ёжика,
+</div>
+
+<div class="card card_content_image">
+  <div class="card__image-container">
+    <img class="card__image" src="./images/gallery/eji-dai-ezhiki-3.jpg"/>
+  </div>
+</div>
+</section>
+
+
+
+<section class="about-with-photo">
+
+    <div class="card card__accented">
+      <div class="card__text-container card__text-container__accented">
+        <h2 class="card__title card__title__accented">Все необходимое ёжикам</h2>
+        <p class="card__paragraph card__paragraph__accented">Питомник африканских ежей ЕЖИ-DAI - это не обычный питомник,
+          у нас очень интересно!</p>
+        <p class="card__paragraph card__paragraph__accented">Приехав в питомник ЕЖИ-DAI и приобретая ёжика,
           Вы сразу можете приобрести клетку, а так же все
           необходимые для жизни ежика аксессуары, например
           специальное пластиковое колесо, поилку, кормушку и флисовый мешочек.</p>
-        <a class="card__button" target="_blank" href="./pages/care.html">
-          Содержание и уход &rarr;
-        </a>
-      </div>
-    </div>
-
-    <div class="card card_position_right">
-      <div class="card__image-container card__image-container_position_right">
-        <img class="card__image card__image_position_right" src="./images/gallery/eji-dai-ezhiki-14.jpg"/>
-      </div>
-      <div class="card__text-container card__text-container_position_right">
-        <h2 class="card__title">Помощь и консультация</h2>
-        <p class="card__paragraph">При покупке африканского ежика ВЫ ПОЛУЧАЕТЕ
-          пожизненную консультацию питомника ЕЖИ DAI.</p>
-        <p class="card__paragraph">
-          Я - всегда с Вами<br />
-          Я - всегда на связи<br />
-          Я - ВСЕГДА РЯДОМ!
-        </p>
-        <a class="card__button" target="_blank" href="./pages/children.html">
-          Выбрать ежика &rarr;
-        </a>
+          <br />
+          <p class="card__paragraph card__paragraph__accented">При покупке африканского ежика Вы получаете
+           <br><b>пожизненную консультацию питомника ЕЖИ DAI</b>.</p>
+          <p class="card__paragraph card__paragraph__accented">
+            Я - всегда с Вами<br />
+            Я - всегда на связи<br />
+            Я - ВСЕГДА РЯДОМ!
+          </p>
+          <a class="card__button card__button__accented" target="_blank" href="./pages/children.html">
+            Выбрать ежика &rarr;
+          </a>
       </div>
     </div>
   </section>

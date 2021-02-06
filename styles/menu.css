@@ -1,5 +1,13 @@
 /*** HTML5 Boilplate ***/
 
+.header__container {
+  position: sticky;
+  top:0;
+  left: 0;
+  z-index:999999999999999;
+}
+
+
 ::selection {
   background: #d53369;
   color: #FFF;
@@ -17,18 +25,23 @@
   height: auto;
   position: sticky;
   top: 0;
+  left: 0;
   background-color: #fff;
   z-index: 10;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .navbar {
-  width: 97%;
+  width: 100%;
+  max-width: 1024px;
   margin: auto;
   position: relative;
 }
 
 .navbar-top {
   height: 50px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,7 +155,7 @@
 .nav__toggle {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .nav__close {
