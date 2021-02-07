@@ -60,7 +60,7 @@
   transition: 0.5s;
   position:fixed;
   bottom:60px;
-  left: 94%;
+  right: 60px;
   margin-left:-40px;
   margin-top:-40px;
   width: 80px;

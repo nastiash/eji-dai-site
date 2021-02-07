@@ -84,9 +84,7 @@
     z-index: 1;
   }
 
-  .card__button__accented {
 
-  }
 
 
 
@@ -382,6 +380,10 @@
 
   .card__text-container__accented {
     border-radius: 0;
+  }
+
+  .card__button__accented {
+    width: 200px;
   }
 
   .buy {

@@ -151,7 +151,11 @@
   top: 50%;
   display: none;
   height: 100%;
-  margin-top:
+}
+
+.nav__name {
+  height: 30px;
+  margin-left: 20px;
 }
 
 .nav__toggle {
