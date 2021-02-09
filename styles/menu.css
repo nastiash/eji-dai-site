@@ -1,6 +1,6 @@
 /*** HTML5 Boilplate ***/
 
-.header__container {
+.header {
   position: sticky;
   top:0;
   left: 0;
@@ -38,7 +38,7 @@
   position: relative;
 }
 
-.navbar-top {
+.navbar_place_top {
   height: 50px;
   margin: 0 auto;
   display: flex;
@@ -46,14 +46,14 @@
   justify-content: space-between;
 }
 
-.phone__container {
+.phone {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: fit-content;
 }
 
-.phone-icon__container {
+.phone__icon {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -82,7 +82,7 @@
   margin-right: 0;
 }
 
-.social__container {
+.social {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -112,7 +112,7 @@
   z-index: 1000;
 }
 
-.navbar-bottom .nav-links li {
+.navbar_place_bottom .nav-links li {
   margin-right: 10px;
   text-transform: uppercase;
   display: inline-block;
@@ -121,7 +121,7 @@
   position: relative;
 }
 
-.navbar-bottom .nav-links li a {
+.navbar_place_bottom .nav-links li a {
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -129,8 +129,8 @@
   padding: 0 20px;
 }
 
-.navbar-bottom
-.nav-links li:hover > a, .navbar-bottom
+.navbar_place_bottom
+.nav-links li:hover > a, .navbar_place_bottom
 .nav-links li a.active {
   background: #fff;
   color: #e01269;
@@ -154,14 +154,11 @@
 
 .nav__name {
   height: 30px;
-  margin-left: 20px;
 }
 
 .nav__toggle {
   width: 30px;
   height: 30px;
-  margin-left: 20px;
-  margin-top: 5px;
 }
 
 .nav__close {
@@ -173,7 +170,11 @@
   display: none;
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 900px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
   .phone__link {
     display: none;
     font-size: 14px;
@@ -184,7 +185,7 @@
     color: #2A2C2F;
   }
 
-  .navbar-bottom .nav-links {
+  .navbar_place_bottom .nav-links {
     position: fixed;
     top: 0;
     left: 0;
@@ -216,7 +217,10 @@
   }
 
   .menu-toggle {
-    display: inline-block;
+    display: flex;
+    width: 100%;
+    padding: 5px 20px 0;
+    justify-content: space-between;
     margin-left: 0;
   }
 
@@ -227,7 +231,7 @@
     z-index: 1000;
   }
 
-  .navbar-bottom
+  .navbar_place_bottom
   .nav-links li {
     display: block;
     height: auto;
@@ -237,15 +241,15 @@
     overflow: hidden;
   }
 
-  .navbar-bottom
+  .navbar_place_bottom
   .nav-links li a {
     height: 60px;
     color: #d53369;
   }
 
-  .navbar-bottom
+  .navbar_place_bottom
   .nav-links li a:hover,
-  .navbar-bottom .nav-links li a.active {
+  .navbar_place_bottom .nav-links li a.active {
     background-image: linear-gradient(to right,
      #DD2476 51%,
      #FF512F 100%);

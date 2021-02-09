@@ -1,0 +1,32 @@
+.title__wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  display:flex;
+  margin: 40px auto;
+  font-size: 38px;
+  font-weight: 800;
+  width: auto;
+  align-self: flex-start;
+  position: relative;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .title__wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+.title {
+  width: 50%;
+  font-size: 32px;
+  text-align: center;
+  margin: 40px auto;
+}
+}

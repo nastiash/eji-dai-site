@@ -1,0 +1,57 @@
+.buy {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 40px;
+  margin: 0 auto 40px;
+  }
+
+  .buy-card {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 70px 1fr;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(63, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  .buy-icon-container {
+    width: 100%;
+    background-color: #DD2476;
+    border-radius: 4px 0 0 4px;
+    z-index:-1;
+    display: flex;
+  }
+
+  .buy-icon {
+  z-index: 1;
+  height: 50px;
+  margin: auto;
+  }
+
+  .buy-text-container {
+  padding: 20px 30px;
+  text-align: center;
+
+  border-radius: 0 4px 4px 0;
+  margin: 0 auto;
+  }
+
+  .buy-text {
+    padding-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  @media (max-width: 900px) {
+
+    .buy {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 0 20px;
+        }
+
+
+    }

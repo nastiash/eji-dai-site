@@ -48,7 +48,7 @@
   }
 }
 
-.whatsapp__container {
+.whatsapp {
   display: block;
   background: none;
   border: 0;
@@ -100,7 +100,7 @@
   animation: lexprofitBorderAnim 3s -0.5s linear infinite;
 }
 
-.whatsapp__btn {
+.whatsapp__button {
     z-index: 10;
     position: absolute;
     top:0;
@@ -120,7 +120,7 @@
   left: 0;
 }
 
-.whatsapp__container:hover .whatsapp__btn {
+.whatsapp__container:hover .whatsapp__button {
   background-color:#bbb;
 }
 .whatsapp__container:hover:after {
@@ -129,6 +129,6 @@
 .whatsapp__container:hover:before {
   border-color:#aaa;
 }
-.whatsapp__container:hover .whatsapp__btn{
+.whatsapp__container:hover .whatsapp__button{
   animation: lexprofitBoundingAnim 1s linear infinite;
 }

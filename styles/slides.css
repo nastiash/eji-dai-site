@@ -1,0 +1,139 @@
+/*
+<section class="photos-list_slider">
+<input type="radio" name="point" id="slide1" checked>
+<input type="radio" name="point" id="slide2">
+<input type="radio" name="point" id="slide3">
+<div class="slider">
+  <img class="slides slide1" src="./images/hedgehog-grid.jpg">
+  <img class="slides slide2" src="./images/gallery/eji-dai-ezhiki-17.jpg">
+  <img class="slides slide3" src="./images/gallery/eji-dai-ezhiki-3.jpg">
+</div>
+<div class="controls">
+  <label for="slide1"></label>
+  <label for="slide2"></label>
+  <label for="slide3"></label>
+</div>
+</section>
+
+*/
+
+.photos-list_slider {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto 80px;
+  position: relative;
+  display: none;
+}
+
+.photos-list_slider > input {
+	display: none;
+}
+
+.slider {
+	background-color: #f8f8f8;
+  max-width: 100%;
+  height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider:after {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+
+.slides {
+	opacity: 0;
+	position: absolute;
+  max-width: 100%;
+  height: auto;
+	z-index: 0;
+	transform: scale(1.5);
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+.slide1 {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.slide2 {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.slide3 {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.photos-list_slider .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+
+.photos-list_slider label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	border-radius: 50%;
+}
+
+.photos-list_slider label:after {
+	border: 2px solid #DD2476;
+	content: " ";
+	display: block;
+	height: 16px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 16px;
+	border-radius: 50%;
+}
+
+.photos-list_slider label {
+	cursor: pointer;
+	display: inline-block;
+	height: 12px;
+	margin: 25px 16px 0 20px;
+	position: relative;
+	width: 12px;
+	border-radius: 50%;
+	transition: background ease-in-out .5s;
+}
+
+.photos-list_slider label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+	background: #DD2476;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+	opacity: 1;
+	z-index: 1;
+	transform: scale(1);
