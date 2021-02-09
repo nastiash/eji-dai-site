@@ -56,7 +56,6 @@
   opacity: 1;
   outline: 0;
   overflow: visible;
-  vertical-align: top;
   transition: 0.5s;
   position:fixed;
   bottom:60px;
