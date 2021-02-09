@@ -3,7 +3,7 @@
 }
 
 .news {
-  width: 80%;
+  width: 100%;
   margin: 0 auto 40px;
   position: relative;
 	padding: 40px;
@@ -36,7 +36,7 @@
 }
 
 .news__title {
-  font-size: 35px;
+  font-size: 28px;
   line-height: 1.25;
   padding-top: 10px;
 }
@@ -86,3 +86,17 @@
    color: #fff;
    text-decoration: none;
  }
+
+ @media (max-width: 900px) {
+  .news__container {
+    padding: 0 20px;
+  }
+
+  .news__photos-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+}
